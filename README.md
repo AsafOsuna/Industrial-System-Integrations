@@ -53,6 +53,7 @@ Trabajo en la intersección de:
 ![Drives](https://img.shields.io/badge/Drives-Industrial-orange)
 
 ### Comunicaciones Industriales
+![Modbus](https://img.shields.io/badge/Protocol-Modbus%20RTU-E80700)
 ![Modbus](https://img.shields.io/badge/Protocol-Modbus%20TCP-005A9C)
 ![EtherNet/IP](https://img.shields.io/badge/Protocol-EtherNet%2FIP-red)
 ![OPC UA](https://img.shields.io/badge/Protocol-OPC%20UA-3F51B5)
