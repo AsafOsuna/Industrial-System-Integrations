@@ -67,6 +67,10 @@ Trabajo en la intersección de:
 ![IIoT](https://img.shields.io/badge/IIoT-Industrial%20IoT-607D8B)
 ![Data](https://img.shields.io/badge/Data-Industrial%20Data-795548)
 
+#### Manipulación & Análisis de Datos
+![Google Sheets](https://img.shields.io/badge/Google%20Sheets-Analysis-34A853)
+![Pandas](https://img.shields.io/badge/Pandas-DataFrames-150458)
+![SQL](https://img.shields.io/badge/SQL-Queries-336791)
 ---
 
 ## 📁 Contenido del Repositorio
