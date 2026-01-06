@@ -1,0 +1,23 @@
+[
+    {
+        "id": "18e823109e49f9dd",
+        "type": "function",
+        "z": "52c1b2dfca70b86d",
+        "g": "b5d42d04edca706f",
+        "name": "node-red-dashboard-date-format-sqlite",
+        "func": "let strDate1 = new Date(msg.payload).toISOString();\nlet strDate2 = new Date(msg.payload).toISOString();\n\nlet strDate = strDate1 == \"1970-01-01T00:00:00.000Z\"\n    ? 0\n    : strDate1.substring(0, 10) + \" \" + strDate2.substring(11, 19);\n\nlet date = new Date(strDate);\n\nif (strDate != 0) {\n    // Extraer los componentes de la fecha\n    let year = date.getFullYear();\n    let month = (\"0\" + (date.getMonth() + 1)).slice(-2); // Meses son 0-based, así que sumamos 1\n    let day = (\"0\" + date.getDate()).slice(-2);\n    let hours = (\"0\" + date.getHours()).slice(-2);\n    let minutes = (\"0\" + date.getMinutes()).slice(-2);\n    let seconds = (\"0\" + date.getSeconds()).slice(-2);\n\n    // Formatear la fecha en el formato compatible con SQLite\n    msg.payload = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n} else {\n    msg.payload = \"\";\n}\nreturn msg;\n\n//Buscar como manejar el NaN cuando se resetea filtro",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3050,
+        "y": 2920,
+        "wires": [
+            [
+                "1e9c91e676095c73"
+            ]
+        ]
+    }
+]
