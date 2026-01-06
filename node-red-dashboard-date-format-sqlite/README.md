@@ -20,4 +20,3 @@ Se provee la función `formatDashboardDate(input)` que:
 - devuelve `""` si el input es inválido o vacío
 
 ## Uso (Bloque Function en Node-red)
-```js
